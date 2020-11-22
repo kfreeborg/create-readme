@@ -1,6 +1,6 @@
 
-  # Project Title
-  [![License](https://img.shields.io/badge/License-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache2.0)
+  # README.md Generator
+  ![License](https://img.shields.io/badge/License-TheUnlicense-blue.svg)
 
   ## Table of Contents
   * [Description](#description)
@@ -12,22 +12,22 @@
   * [Tests](#tests)
    
   ## Description
-  Project Description
+  This is node.js application that will create a README.md for the user.
 
   ## Installation Instructions
-  one
+  1. Install node.js on your computer. 2. Run node index.js.
 
   ## Usage Information
-  two
+  N/A
 
   ## License
-  Apache 2.0
+  The Unlicense
 
   ## Contributors
-  three
+  They can use it!
 
   ## Tests
-  four
+  N/A
 
   ## Questions
   For questions, contact me at [kelsey.freeborg@gmail.com](kelsey.freeborg@gmail.com)
