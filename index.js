@@ -87,7 +87,7 @@ const questions = [
   {
     type: 'list',
     message: "Choose a license for your project.",
-    choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+    choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
     name: 'license'
   },
   {
@@ -107,8 +107,7 @@ function writeToFile(fileName, data) {
     if (err) {
       return console.log(err);
     }
-
-    console.log("Success! Your README.md file has been generated")
+    console.log("Your README.md file has been generated!")
   });
 }
 
@@ -122,14 +121,3 @@ function init() {
 
 // function call to initialize program
 init();
-
-
-
-// WHEN I choose a license for my application from a list of options
-// THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-// WHEN I enter my GitHub username
-// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-// WHEN I enter my email address
-// THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-// WHEN I click on the links in the Table of Contents
-// THEN I am taken to the corresponding section of the README

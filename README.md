@@ -1,6 +1,6 @@
-# My Project
 
-  ![project image](./imgs/ination.png)
+  # Project Title
+  [![License](https://img.shields.io/badge/License-Apache2.0-blue.svg)](https://opensource.org/licenses/Apache2.0)
 
   ## Table of Contents
   * [Description](#description)
@@ -9,24 +9,27 @@
   * [License](#license)
   * [Contributors](#contributors)
   * [Questions](#questions)
+  * [Tests](#tests)
    
   ## Description
-  Coolest thing ever
+  Project Description
 
   ## Installation Instructions
-  Nope
+  one
 
   ## Usage Information
-  Nada
+  two
 
   ## License
-  MIT License
+  Apache 2.0
 
   ## Contributors
-  Only adding cool stuff
+  three
+
+  ## Tests
+  four
 
   ## Questions
-  Contact me:
+  For questions, contact me at [kelsey.freeborg@gmail.com](kelsey.freeborg@gmail.com)
 
   Github: [https://github.com/kfreeborg](https://github.com/kfreeborg)
-  Email: [kelsey.freeborg@gmail.com](kelsey.freeborg@gmail.com)
