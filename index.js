@@ -6,50 +6,72 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 const questions = [
   {
     type: 'input',
-    message: "What is your GitHub username?",
+    message: "What is your GitHub username? (Required)",
     name: 'username',
     default: 'kfreeborg',
-    validate: answer => {
-      if (answer.length < 1) {
-        return console.log("A valid GitHub username is required.");
+    validate: usernameInput => {
+      if (usernameInput) {
+        return true;
+      } else {
+        console.log('Please enter your username!');
+        return false;
       }
-      return true;
     }
   },
   {
     type: 'input',
-    message: "What is the name of your GitHub repository?",
+    message: "What is your email? (Required)",
+    name: 'email',
+    default: 'kelsey.freeborg@gmail.com',
+    validate: emailInput => {
+      if (emailInput) {
+        return true;
+      } else {
+        console.log('Please enter your email!');
+        return false;
+      }
+    }
+  },
+  {
+    type: 'input',
+    message: "What is the name of your GitHub repository? (Required)",
     name: 'repo',
     default: 'Github Repo',
-    validate: answer => {
-      if (answer.length < 1) {
-        return console.log("A valid GitHub repository is required for a badge.");
+    validate: repoNameInput => {
+      if (repoNameInput) {
+        return true;
+      } else {
+        console.log('Please enter your repoName!');
+        return false;
       }
-      return true;
     }
   },
   {
     type: 'input',
-    message: "What is the title of your project?",
+    message: "What is the title of your project? (Required)",
     name: 'title',
     default: 'Project Title',
-    validate: answer => {
-      if (answer.length < 1) {
-        return console.log("A valid project title is required.");
+    validate: titleNameInput => {
+      if (titleNameInput) {
+        return true;
+      } else {
+        console.log('Please enter your titleName!');
+        return false;
       }
-      return true;
     }
   },
   {
     type: 'input',
-    message: "Write a description for your project.",
+    message: "Write a description for your project. (Required)",
     name: 'description',
     default: 'Project Description',
-    validate: answer => {
-      if (answer.length < 1) {
-        return console.log("A valid project description is required.");
+    validate: descriptionInput => {
+      if (descriptionInput) {
+        return true;
+      } else {
+        console.log('Please enter your description!');
+        return false;
       }
-      return true;
     }
   },
   {
@@ -79,15 +101,6 @@ const questions = [
     name: 'tests'
   },
 ];
-//title of my project and sections entitled 
-//Description, 
-//Table of Contents, 
-//Installation, 
-//Usage, 
-//License, 
-//Contributing, 
-//Tests, and 
-//Questions
 
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, err => {
@@ -110,13 +123,8 @@ function init() {
 // function call to initialize program
 init();
 
-// GIVEN a command - line application that accepts user input
-// WHEN I am prompted for information about my application repository
-// THEN a high - quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-// WHEN I enter my project title
-// THEN this is displayed as the title of the README
-// WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-// THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+
+
 // WHEN I choose a license for my application from a list of options
 // THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
 // WHEN I enter my GitHub username
